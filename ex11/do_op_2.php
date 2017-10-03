@@ -3,7 +3,7 @@
 	if ($argc == 2) {
 		$argv[1] = trim($argv[1]);
 		$tab = preg_split('/(\+|\-|\*|\/|\%)/', $argv[1], -1, PREG_SPLIT_DELIM_CAPTURE);
-		
+		print_r($tab);
 		if (count($tab) == 3) {
 			$tab[0] = trim($tab[0]);
 			$tab[1] = trim($tab[1]);
@@ -27,14 +27,14 @@
 						echo ($tab[0] % $tab[2])."\n";
 						break;
 					default:
-						echo "Syntax Error3\n";
+						echo "Syntax Error\n";
 				}
 			}
 			else
-				echo "Syntax Error2\n";
+				echo "Syntax Error\n";
 		}
 		else 
-			echo "Syntax Error1\n";
+			echo "Syntax Error\n";
 	}
 	else {
 		echo "Incorrect Parameters\n";
