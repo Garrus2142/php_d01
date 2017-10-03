@@ -21,11 +21,7 @@
 		return ($tab);
 	}
 
-	$params = array();
-	for ($i = 1; $i < $argc; $i++)
-		array_push($params, $argv[$i]);
-
-	$splited = ft_split(implode($params, ' '));
+	$splited = ft_split(implode(array_splice($argv, 1), ' '));
 	
 	foreach ($splited as $split)
 		echo "$split\n";
