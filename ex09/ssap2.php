@@ -54,7 +54,7 @@
 
 		if (strlen($item) > 0)
 			array_push($tab, $item);
-		usort($tab, sortcb);
+		usort($tab, 'sortcb');
 		return ($tab);
 	}
 
