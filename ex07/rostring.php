@@ -26,7 +26,9 @@
 			array_push($tab, $tab[0]);
 			$tab[0] = '';
 		}
+		$im = implode(' ', $tab);
 
-		echo implode(' ', $tab)."\n";
+		if (strlen($im) > 0)
+			echo "$im\n";
 	}
 ?>
