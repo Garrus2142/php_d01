@@ -73,7 +73,7 @@
 			if (!isset($csv[0]))
 				$notes[$csv[0]] = array();
 			
-			if (strlen($csv[1]) > 0) {
+			if (is_numeric($csv[1])) {
 				if ($csv[2] == 'moulinette') {
 					$notes[$csv[0]]['moulinette'] = $csv[1];
 				}
