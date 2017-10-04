@@ -21,7 +21,10 @@
 						echo ($tab[0] * $tab[2])."\n";
 						break;
 					case '/':
-						echo ($tab[0] / $tab[2])."\n";
+						if ($tab[2] == 0)
+							echo "Syntax Error\n";
+						else
+							echo ($tab[0] / $tab[2])."\n";
 						break;
 					case '%':
 						echo ($tab[0] % $tab[2])."\n";
