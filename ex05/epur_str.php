@@ -16,7 +16,7 @@
 				$epur_str = $epur_str.$str[$i];
 			}
 		}
-
-		echo "$epur_str\n";
+		if (strlen($epur_str) > 0)
+			echo "$epur_str\n";
 	}
 ?>
