@@ -19,14 +19,13 @@
 			array_push($tab, $item);
 		return ($tab);
 	}
-
 	if ($argc > 1) {
 		$tab = ft_explode($argv[1]);
 		if (count($tab) > 1) {
 			array_push($tab, $tab[0]);
 			$tab[0] = '';
 		}
-		$im = implode(' ', $tab);
+		$im = trim(implode(' ', $tab));
 
 		if (strlen($im) > 0)
 			echo "$im\n";
