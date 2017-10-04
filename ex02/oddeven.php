@@ -18,8 +18,9 @@
             }
             else
                 echo "'$line' n'est pas un chiffre\n";
-            echo "Entrez un nombre: ";
-        }
+			echo "Entrez un nombre: ";
+		}
+		echo "\n";
     } else {
         echo "Error stdin\n";
     }
